@@ -22,10 +22,10 @@ class TrainsController extends Controller
         }
 
         $today = $date['year'] . '-' . $month . '-' . $date['mday'];
-        var_dump($today);
+        // var_dump($today);
 
 
-        $trains = Train::where('departure_day', $today)->get();
+        $trains = Train::where('departure_day', '>=', $today)->get();
 
         return view('trains', compact('trains'));
     }

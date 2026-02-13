@@ -6,3 +6,51 @@
 
 // Bootstrap
 @import 'bootstrap/scss/bootstrap';
+
+//
+//Typography
+//
+
+//Trains Font
+main {
+    font-family: "Share Tech Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+//
+//HEADER
+//
+
+header {
+
+    background-color: red;
+    color: white;
+    padding: 1rem;
+    font-weight: bolder;
+}
+
+
+
+
+//
+//MAIN
+//
+
+main {
+
+    .card {
+
+        padding: 0.5rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+
+        .departure {
+
+            text-align: right;
+        }
+    }
+}
